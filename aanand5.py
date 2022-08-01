@@ -1,0 +1,13 @@
+#WAP TO COPY THE CONTENT OF ONE FILE TO ANOTHER
+a = open("ap3.txt","r+")
+b = a.read()
+a.close()
+print("DATA WE'LL COPY FROM FILE(ap3.txt):\n"+b)
+c = open("ap2.txt","r")
+print("\nDATA WE HAVE COPIED FROM FILE(ap3.txt) TO FILE(ap2.txt) :\n"+c.read())
+c = open("ap2.txt","a+")
+c.write(str(b))
+c.close()
+c = open("ap2.txt","r")
+print("\nDATA WE HAVE COPIED FROM FILE(ap3.txt) TO FILE(ap2.txt) :\n"+c.read())
+c.close()
